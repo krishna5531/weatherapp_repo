@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App UI</title>
+    <style>
+        body {
+            background-image: url("data:image/jpeg;base64,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")
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, input {
+            margin: 10px 0;
+            width: 100%;
+            color: white;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <h1 style="text-align: center">Weather Forecast Search</h1>
+   
+    <form action="/weatherapp" method="POST">
+        <label for="city">Enter the city name:</label>
+        <input type="text" name="city" id="city" required><br>
+        <label for="apiid">Enter the API-ID:</label>
+        <input type="text" name="apiid" id="apiid" required><br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
