@@ -15,8 +15,7 @@ def get_weather_data():
         }
     response = requests.get(url, params=p)   # here requests module is used 
     data = response.json()
-    city = data['name']
-    return f"data: {data}, city:{city}"
+     return f"data: {data}"
 
 
 
